@@ -1,0 +1,9 @@
+#!/bin/bash
+USER=$1
+PASSWORD=$2
+DATABASENAME=$3
+echo "$PASSWORD"
+echo "$USER"
+echo "$DATABASENAME"
+mysql -u $USER -p $PASSWORD -e "CREATE DATABASE $DATABASENAME"
+
