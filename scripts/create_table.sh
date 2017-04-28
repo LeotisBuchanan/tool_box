@@ -1,5 +1,6 @@
 #!/bin/bash
 source "ENV.sh"
+TABLENAME=$1
 echo "$USER"
 echo "$PASSWORD"
 echo "$DATABASE"
