@@ -2,4 +2,4 @@
 USER=username
 PASSWORD=password
 DATABASE=database
-TABLE=table
+
