@@ -4,7 +4,9 @@ from string import Template
 
 def format_date(pdte):
    pdte= pdte.replace("\"", "")
-   s = pdte.split(" ") 
+   s = pdte.split(" ")
+   if(len(s) < 2):
+      return None
    dte = s[0].split("/")
    tme = s[1]
    day, month, yyyy = dte
@@ -23,6 +25,8 @@ def main(data_dir):
             if len(fields) < 4:
                continue
             pickup_dt = format_date(fields[0])
+            if pickup_dt is None:
+               continue 
             lat = fields[1]
             lon = fields[2]
             base = fields[3]
