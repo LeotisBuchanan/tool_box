@@ -1,7 +1,5 @@
 #!/bin/bash
 source "ENV.sh"
-echo "$USER"
-echo "$PASSWORD"
-echo "$DATABASE"
+echo "processing..."
 mysql -u$USER -p$PASSWORD -e "CREATE DATABASE IF NOT EXISTS $DATABASE"
-
+echo "done......"
