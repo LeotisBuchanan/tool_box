@@ -8,7 +8,6 @@ def format_date(pdte):
    dte = s[0].split("/")
    tme = s[1]
    day, month, yyyy = dte
-   print(pdte)
    frmt_dt = yyyy + "-" + month + "-" + day + " " + tme
    return frmt_dt
 
